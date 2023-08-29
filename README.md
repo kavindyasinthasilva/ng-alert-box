@@ -47,7 +47,7 @@ import { NgAlertBoxService } from 'ng-alert-box-popup';
 })
 export class AppComponent {
 
-  constructor(private alertBoxService: NgAlertBoxService) {}
+  constructor(private alerts: NgAlertBoxService) {}
 
   showSuccessAlert() {
      this.alerts.dialog('I','Example Error');
