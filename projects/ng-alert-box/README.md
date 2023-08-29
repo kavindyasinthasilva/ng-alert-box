@@ -16,6 +16,10 @@ To use `ng-alert-box-popup` in your Angular project, follow these steps:
 
    ```bash
    npm install ng-alert-box-popup
+
+   ```
+   ```bash
+   npm i sweetalert2@7.33.1
    ```
 
 2.Import the NgAlertBoxModule into your application's Components:
