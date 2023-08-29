@@ -7,7 +7,7 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": [],
+    "types": ["sweetalert2"],
     "lib": [
       "dom",
       "es2018"

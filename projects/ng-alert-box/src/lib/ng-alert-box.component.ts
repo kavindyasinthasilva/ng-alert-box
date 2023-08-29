@@ -6,10 +6,13 @@ import swal from 'sweetalert2';
   providedIn: 'root'
 })
 
-export class NgAlertBoxComponent {
+export class NgAlertBoxComponent implements  OnInit {
 
   constructor() {}
 
+  ngOnInit(){
+
+  }
 
   public dialog(type : any, msg : any){
 
