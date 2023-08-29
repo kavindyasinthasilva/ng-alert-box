@@ -11,7 +11,7 @@ export class NgAlertBoxComponent {
   constructor() {}
 
 
-  public dialog({type, msg}: { type: any, msg: any }) {
+  public dialog(type : any, msg : any){
 
     if (type.toUpperCase() == 'S') {
       swal("Success!", msg, "success");
