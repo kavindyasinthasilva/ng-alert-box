@@ -14,6 +14,20 @@ export class NgAlertBoxComponent implements  OnInit {
 
   }
 
+  public  msgAlert(type : any, msg : any){
+
+    if(type.toUpperCase() == 'S'){
+      document.getElementsByClassName('msg-data')[0].innerHTML = '<div class="alert alert-success">'+msg+'</div>';
+    }else if(type.toUpperCase() == 'E'){
+      document.getElementsByClassName('msg-data')[0].innerHTML = '<div class="alert alert-danger">'+msg+'</div>';
+    }else if(type.toUpperCase() == 'W'){
+      document.getElementsByClassName('msg-data')[0].innerHTML = '<div class="alert alert-warning">'+msg+'</div>';
+    }
+
+    setTimeout(()=>{ document.getElementsByClassName('msg-data')[0].innerHTML = ''; }, 3000);
+
+  }
+
   public dialog(type : any, msg : any){
 
     if (type.toUpperCase() == 'S') {
