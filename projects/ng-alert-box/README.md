@@ -2,23 +2,79 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-## Code scaffolding
+![Image](https://raw.githubusercontent.com/kavindyasinthasilva/ng-alert-box/main/projects/ng-alert-box/Alert.png)
 
-Run `ng generate component component-name --project ng-alert-box` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-alert-box`.
-> Note: Don't forget to add `--project ng-alert-box` or else it will be added to the default project in your `angular.json` file. 
+# ng-alert-box-popup
 
-## Build
+`ng-alert-box-popup` is an Angular library that provides a customizable alert box component with support for different types of alerts using SweetAlert2.
 
-Run `ng build ng-alert-box` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Publishing
+To use `ng-alert-box-popup` in your Angular project, follow these steps:
 
-After building your library with `ng build ng-alert-box`, go to the dist folder `cd dist/ng-alert-box` and run `npm publish`.
+1. Install the library using npm:
 
-## Running unit tests
+   ```bash
+   npm install ng-alert-box-popup
+   ```
 
-Run `ng test ng-alert-box` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2.Import the NgAlertBoxModule into your application's Components:
 
-## Further help
+  ```bash
+  import {NgAlertBoxComponent} from "ng-alert-box-popup";
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage
+
+Once you've imported the NgAlertBoxModule into your application, you can use the NgAlertBoxComponent to display different types of alerts:
+
+Import the NgAlertBoxService in your component:
+
+  ```bash
+  import { Component } from '@angular/core';
+import { NgAlertBoxService } from 'ng-alert-box-popup';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <button (click)="showSuccessAlert()">Show Success Alert</button>
+    <button (click)="showErrorAlert()">Show Error Alert</button>
+  `
+})
+export class AppComponent {
+
+  constructor(private alertBoxService: NgAlertBoxService) {}
+
+  showSuccessAlert() {
+     this.alerts.dialog('I','Example Error');
+  }
+
+  showErrorAlert() {
+     this.alerts.dialog('I','Example Error');
+  }
+}
+   ```
+
+  ```bash
+   this.alerts.dialog('I','Example Error');
+   ```
+
+
+## License
+
+This library is released under the MIT License. See LICENSE for details.
+
+## Contributing
+
+We welcome contributions from the community. Please read our Contribution Guidelines for more information.
+
+If you encounter any issues or have questions, please feel free to open an issue in our GitHub repository.
+
+Happy coding!
+
+  ```bash
+  https://github.com/kavindyasinthasilva/ng-alert-box
+   ```
+       
+       
+
