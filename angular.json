@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ng-alert-box": {
+      "projectType": "library",
+      "root": "projects/ng-alert-box",
+      "sourceRoot": "projects/ng-alert-box/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-alert-box/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-alert-box/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-alert-box/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-alert-box/src/test.ts",
+            "tsConfig": "projects/ng-alert-box/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-alert-box/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-alert-box"
 }
