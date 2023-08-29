@@ -1,12 +1,11 @@
 # NgAlertBox
+`ng-alert-box-popup` is an Angular library that provides a customizable alert box component with support for different types of alerts using SweetAlert2.
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 ![Image](https://raw.githubusercontent.com/kavindyasinthasilva/ng-alert-box/main/projects/ng-alert-box/Alert.png)
 
 # ng-alert-box-popup
-
-`ng-alert-box-popup` is an Angular library that provides a customizable alert box component with support for different types of alerts using SweetAlert2.
 
 ## Installation
 
